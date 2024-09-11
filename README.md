@@ -15,11 +15,11 @@ Template project to create a JavaFX project with dependencies and build it as an
 * Or use [SDKMAN](https://sdkman.io/) on Linux or macOS to easily install a JDK or switch to an other one:
 ```bash
 # Install SDKMAN 
-curl -s "https://get.sdkman.io" | bash
-source "$HOME/.sdkman/bin/sdkman-init.sh"
+$ curl -s "https://get.sdkman.io" | bash
+$ source "$HOME/.sdkman/bin/sdkman-init.sh"
 
 # Install SDK and answer Y to set as default
-sdk install java 21.0.4.fx-zulu
+$ sdk install java 21.0.4.fx-zulu
 ```
 
 ## Install Maven
@@ -27,7 +27,7 @@ sdk install java 21.0.4.fx-zulu
 * Follow the instructions on [the website of the Apache Maven Project](https://maven.apache.org/install.html).
 * Or use [SDKMAN](https://sdkman.io/) on Linux or macOS:
 ```bash
-sdk install maven
+$ sdk install maven
 ```
 
 ## Check Java and Maven version
