@@ -22,7 +22,7 @@ sdk install java 21.0.4.fx-zulu
 
 ## Install Maven
 
-* Follow the instructions here:
+* Follow the instructions on [the website of the Apache Maven Project](https://maven.apache.org/install.html).
 * Or use [SDKMAN](https://sdkman.io/) on Linux or macOS:
 ```bash
 sdk install maven
