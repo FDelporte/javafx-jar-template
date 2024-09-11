@@ -1,6 +1,8 @@
 # JavaFX JAR Template
 
-Template project to create a JavaFX project with dependencies and build it as executable JAR
+Template project to create a JavaFX project with dependencies and build it as an executable jar-file. This project contains TilesFX to illustrate the use of extra dependencies.
+
+![Screenshot of the running application](screenshot/running-app.png)
 
 ## Install Java SDK with JavaFX 
 
@@ -49,10 +51,10 @@ OS name: "mac os x", version: "14.6.1", arch: "aarch64", family: "mac"
 1. Check out the sources
 1. Open in IntelliJIDEA as a new Maven project
 1. Configure a JDK with JavaFX in "Project Structure > SDK"
-![Configuring the SDK in IntelliJIDEA](screenshot/project-sdk.png)
+![Configuring the SDK in IntelliJIDEA](screenshot/intellijidea-project-sdk.png)
 1. Go to the file `src/main/java/be/webtechie/app/AppLauncher.java`
 1. Click on the green button "Run AppLauncher.main()"
-![Running the application in IntelliJIDEA](screenshot/run-app.png)
+![Running the application in IntelliJIDEA](screenshot/intellijidea-run-app.png)
 
 ## Build as executable JAR with all dependencies
 
