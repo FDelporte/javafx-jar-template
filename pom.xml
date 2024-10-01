@@ -35,6 +35,8 @@
             <artifactId>javafx-controls</artifactId>
             <version>${javafx.version}</version>
         </dependency>
+
+        <!-- Other dependencies -->
         <dependency>
             <groupId>eu.hansolo</groupId>
             <artifactId>tilesfx</artifactId>
@@ -46,15 +48,32 @@
         <finalName>javafx-app</finalName>
 
         <plugins>
+            <!--
+            Plugin to compile Java source files (.java) into bytecode files (.class).
+            It allows you to specify the Java version for both source and target compatibility.
+            -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>${maven.compiler.version}</version>
                 <configuration>
-                    <release>11</release>
+                    <source>${java.version}</source> <!-- Specify your source compatibility Java version -->
+                    <target>${java.version}</target> <!-- Specify your target compatibility Java version -->
                 </configuration>
             </plugin>
 
+            <!--
+            Plugin to create distributions (assemblies) of your Maven project.
+            It allows you to bundle your project along with its dependencies,
+            configuration files, documentation, and other resources into
+            a single compressed file format, such as a ZIP, TAR.GZ, or JAR file.
+            This is particularly useful for packaging applications that need
+            to be distributed to end-users or deployed to servers.
+
+            By setting addClasspath to true and defining the mainClass,
+            the classpath gets added to the manifest file of the assembled JAR.
+            This is necessary for an executable JAR.
+            -->
             <plugin>
                 <artifactId>maven-assembly-plugin</artifactId>
                 <version>${maven.assembly.version}</version>
